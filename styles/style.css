@@ -7,6 +7,17 @@
     font-variation-settings:
       "slnt" 0;
   }
+  /* title style font */
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+  .dancing-script-font {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: italic;
+   }
+
+  /* title style font ends here */
   *{
     margin: 0;
     padding: 0;
@@ -16,35 +27,246 @@
     display: flex;
 }
 .white{
-    color: white;
+    color: rgb(255, 255, 255);
+}
+.semi-white{
+  color: rgba(255, 255, 255, 0.5);
 }
 
 
   /* navbar styles */
   header{
+    /* position: relative; */
     max-width: 1440px;
-    height: 715px;
+    /* height: 715px; */
     margin: 0 auto;
     border: 2px solid red;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
     background-color: rgb(0, 0, 0);
-    background-color:  linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0));
 
   }
   .navbar{
     justify-content: space-between;
     /* margin-top: 58px; */
     max-width: 1080px;
-    margin: 58px auto;
+    margin: 50px auto;
+  }
+  .nav-icon{
+    display: none;
   }
   .nav-item{
     list-style: none;
-    margin-right: 67px;
+    margin-right: 47px;
   }
   .nav-link{
     font-size: 1.125rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 49px;
+    align-items: center;
    }
   .brand{
     color: rgb(230, 83, 60);
     font-size: 2.25rem;
     font-weight: 800;
   }
+  .btn-nav{
+    background-color: rgb(230, 83, 60);
+    border: none;
+    border-radius: 46px;
+    padding: 8px 20px 8px 20px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+
+  }
+  /* banner styles */
+  .banner-container{
+    justify-content: space-between;
+    gap: 160px;
+    margin-left: 190px;
+    margin-right: 210px;
+  }
+  .banner-text{
+    max-width: 520px;
+    border: 2px solid green;
+    margin-top: 70px;
+    text-align: left;
+  }
+  .banner-title{
+    font-size: 4.875rem;
+    font-weight: 900;
+  }
+  .banner-des{
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
+  
+  .btn-primary{
+    background-color: rgb(230, 83, 60);
+    border: none;
+    border-radius: 42px;
+    padding: 16px 40px 16px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+
+  }
+  .btn-clear{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    padding: 16px 40px 16px 40px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 15px;
+
+  }
+  .banner-img img{
+    max-width: 349px;
+    position: relative;
+    border: 2px solid red;
+  }
+  .tutorial-card-1 h6{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.tutorial-card-1 i{
+  margin-left: 24px;
+  background-color: rgb(230, 83, 60);
+  padding: 12px;
+  border-radius: 50%;
+  color: white;
+}
+.tutorial-card-text{
+  margin-right: 22px;
+}
+
+.tutorial-card-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 206px;
+  height: 96px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(48, 48, 48, 0.54);
+position: absolute;
+left: 1000px;
+top: 556px;
+
+}
+.tutorial-card-2{
+  max-width: 206px;
+  height: 96px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 12px;
+backdrop-filter: blur(20px);
+background: rgba(48, 48, 48, 0.54);
+position: absolute;
+left: 1340px;
+top: 260px;
+
+}
+.tutorial-card-2 h6{
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 10px;
+}
+.tutorial-card-text{
+margin-left: 22px;
+}
+
+/* responsive media query */
+
+@media screen and (max-width: 576px) {
+.banner-container{
+  flex-direction: column;
+  margin: 0 20px;
+}
+.nav-item{
+  display: none;
+}
+.nav-icon{
+  display: block;
+}
+.navbar{
+  margin: 52px 20px;
+}
+.banner-title{
+  font-size: 2.25rem;
+  max-width: 285px;
+  height: 118px;
+}
+.banner-des{
+  max-width: 274px;
+  height: 96px;
+  margin-top: 30px;
+
+}
+  .btn-primary{
+    max-height: 54px;
+    /* padding: 16px 40px; */
+    text-align: center;
+  }
+  .btn-primary span{
+    display: none;
+  }
+  .btn-clear{
+    padding: 16px 25px;
+    margin-left: 15px;
+    max-width: 50%;
+    height: 54px;
+  }
+  .banner-container{
+    gap: 50px;
+  }
+  .tutorial-card-1{
+    left: 32px;
+    top: 870px;
+    width: 150px;
+    height: 70px;
+    gap: 10px;
+  }
+  .tutorial-card-1 i{
+    padding: 6px;
+    color: white;
+    margin-left: 15px;
+  }
+  .tutorial-card-1 h6{
+    font-size: 1.125rem;
+    font-weight: 900;
+}
+.tutorial-card-1 p{
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0;
+}
+.tutorial-card-text{
+  margin-left: 0px;
+  }
+.tutorial-card-2{
+  left: 215px;
+  top: 650px;
+  width: 145px;
+  height: 75px;
+}
+.tutorial-card-2 h6{
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-top: 5px;
+  margin-left: 18px;
+}
+.tutorial-card-2 p{
+  font-size: 0.75rem;
+  text-align: start;
+  margin-left: 18px;
+  padding: 0;
+}
+#r-margin{
+  margin-right: 0px;
+}
+}
