@@ -251,6 +251,8 @@ height: 312px;
 border-radius:18px;
 /* padding: 30px; */
 margin: 30px;
+object-fit: none;
+object-position: 66% 33%;
 }
 .extra-mile-container-text{
   margin-top: 40px;
@@ -290,6 +292,80 @@ margin-bottom: 15px;
 .bmi-calculator-title p{
   font-size: 0.875rem;
 }
+.bmi-details-container{
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 2px solid red;
+  justify-content: space-between;
+  background: rgb(34, 34, 34);
+}
+.bmi-chart{
+  margin-left: 190px;
+}
+.bmi-chart h4{
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+table{
+border-collapse: collapse;
+text-align: start;
+}
+
+td, th{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 24px;
+}
+th{
+  font-weight: 500;
+}
+td{
+  font-size: 0.875rem;
+}
+.bmi-form-content h4{
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 15px;
+
+}
+.bmi-form-content p{
+  font-size: 0.875rem;
+}
+.bmi-form-content{
+  margin-bottom: 55px;
+  margin-right: 190px;
+}
+
+form{
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  column-gap: 12px; 
+  row-gap: 12px;
+
+}
+.item5{
+  grid-column: 1 / span 2;
+}
+form input, select{
+  padding: 12px 40px 12px 20px;
+  border: none;
+  border-radius: 8px;
+background: rgba(255, 255, 255, 0.1);
+}
+.bmi-form-content button{
+  margin-top: 30px;
+}
+/* meet team section  */
+#meet-team{
+  max-width: 1440px;
+  border: 2px solid yellow;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+}
+
 
 /* responsive media query */
 
@@ -411,8 +487,39 @@ margin-bottom: 15px;
   }
   .ex-img{
     width: 287px;
-    height: 170px;
-    margin-top: 0px;
   }
+  /* bmi calculate sec  */
+  .bmi-calculator-title{
+    margin-top: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  .bmi-calculator-title h3{
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .bmi-details-container{
+    flex-direction: column;
+  }
+  .bmi-chart{
+    margin-left: 20px;
+
+  }
+  .bmi-form-content{
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+  form{
+    margin-right: 20px; 
+  }
+  form input, select{
+    padding: 12px 0px 5px 12px;
+  }
+  .bmi-form-content button{
+    margin-top: 15px;
+  }
+  /* meet team section  */
+
 
 }
