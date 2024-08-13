@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
     <script src="https://kit.fontawesome.com/83ae13a96c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/miama" rel="stylesheet" />
 </head>
 <body class="inter-font">
     <header>
@@ -157,20 +159,23 @@
                     <h4 class="white">Calculate your BMI</h4>
                     <p class="semi-white">We believe fitness should be accessible to everyone, everywhere, regardless of <br> income or access to a gym. </p>
 
-                    <form action="">
-                        <input type="text" name="" id="" placeholder="Height/cm">
-                        <input type="text" name="" id="" placeholder="Weight/kg">
-                        <input type="text" name="" id="" placeholder="Age">
-                        <select class="semi-white" name="sex" id="">
-                            <option value="">Sex</option>
-                            <option value="">Male</option>
-                            <option value="">Female</option>
-                        </select>
-                        <select class="item5 semi-white" name="" id="">
-                            <option value="">Select an activity factor</option>
-                        </select>
+                    <input type="text" placeholder="Height/cm" class="form hight semi-white inter-font" />
+            <input type="text" placeholder="Weight/kg" class="form weigth semi-white inter-font" />
+            <br />
+            <input type="text" placeholder="Weight/kg" class="form weigth semi-white inter-font" />
+            <select class="form form-3 inter-font semi-white" >
+              <option>Sex</option>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+            <select class="form form-2 inter-font semi-white" id="select">
+              <option>Select an activity factor</option>
+              <option>Work for 1 Hours</option>
+              <option>Work for 2 Hours</option>
+              <option>Work for 3 Hours</option>
+              <option>Work for 4 Hours+</option>
+            </select>
                         <button class="btn-primary">Calculate</button>
-                    </form>
 
                 </div>
 

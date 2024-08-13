@@ -1,0 +1,190 @@
+@media screen and (max-width: 576px) {
+    .banner-container{
+      flex-direction: column;
+      margin: 0 20px;
+    }
+    .banner-text{
+      margin-top: 0;
+    }
+    .miama-font{
+      font-size: 2.25rem;
+    }
+    .nav-item{
+      display: none;
+    }
+    .nav-icon{
+      display: block;
+    }
+    .navbar{
+      margin: 52px 20px;
+    }
+    .banner-title{
+      font-size: 2.25rem;
+      max-width: 285px;
+      height: 118px;
+    }
+    .banner-des{
+      max-width: 274px;
+      height: 96px;
+      margin-top: 30px;
+    
+    }
+      .btn-primary{
+        padding: 10px 30px 10px 30px;
+      }
+      .btn-primary span{
+        display: none;
+      }
+      .btn-clear{
+        padding: 8px 16px 8px 16px;
+        margin-left: 15px;
+      }
+      .banner-container{
+        gap: 50px;
+      }
+      .tutorial-card-1{
+        left: 32px;
+        top: 870px;
+        width: 150px;
+        height: 70px;
+        gap: 10px;
+      }
+      .tutorial-card-1 i{
+        padding: 6px;
+        color: white;
+        margin-left: 15px;
+      }
+      .tutorial-card-1 h6{
+        font-size: 1.125rem;
+        font-weight: 900;
+    }
+    .tutorial-card-1 p{
+      font-size: 0.75rem;
+      font-weight: 400;
+      padding: 0;
+    }
+    .tutorial-card-text{
+      margin-left: 0px;
+      }
+    .tutorial-card-2{
+      left: 215px;
+      top: 650px;
+      width: 145px;
+      height: 75px;
+    }
+    .tutorial-card-2 h6{
+      font-size: 1.8rem;
+      font-weight: 900;
+      margin-top: 5px;
+      margin-left: 18px;
+    }
+    .tutorial-card-2 p{
+      font-size: 0.75rem;
+      text-align: start;
+      margin-left: 18px;
+      padding: 0;
+    }
+    #r-margin{
+      margin-right: 0px;
+    }
+    /* change sec  */
+    .change-title-text h3{
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+    .change-title-text{
+      margin-top: 0;
+    }
+    .change-card-container{
+      grid-template-columns: 1fr;
+    }
+    .change-card{
+      width: auto;
+    }
+    /* .extra-mile-container */
+    .extra-mile-container{
+      flex-direction: column;
+      margin-top: 60px;
+      gap: 0px;
+      max-width: 355px;
+    }
+    .extra-mile-container button{
+      padding:16px 100px 16px 100px;
+    }
+    .extra-mile-container-text h3{
+      font-weight: 900;
+      font-size: 2rem;
+      }
+      .extra-mile-container-text{
+        margin: 31px 33px;
+      }
+      .ex-img{
+        width: 287px;
+      }
+      /* bmi calculate sec  */
+      .bmi-calculator-title{
+        margin-top: 20px;
+        margin-bottom: 35px;
+        text-align: center;
+      }
+      .bmi-calculator-title h3{
+        font-weight: 900;
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+      .bmi-details-container{
+        flex-direction: column;
+      }
+      .bmi-chart{
+        margin-left: 20px;
+    
+      }
+      .bmi-form-content{
+        margin-right: 0px;
+        margin-left: 20px;
+      }
+      .form{
+        width: 45%;
+    }
+    .form-2{
+        width: 98%;
+    }
+    .form-3{
+        width: 47%;
+    }
+      .bmi-form-content button{
+        margin-top: 15px;
+      }
+      /* meet team section  */
+      .meet-team-title h3{
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 15px;
+      }
+      .card3{
+        order: 3;
+      }
+      .card6{
+        order: 4;
+      }
+      .meet-card-container{
+        grid-template-columns: 1fr;
+      }
+      .card1, .card4{
+        display: none;
+      }
+      /* footer section  */
+      .footer-content{
+        flex-direction: column;
+        gap: 30px;
+      }
+      .footer-text-container{
+        flex-direction: column;
+        gap: 20px;
+      }
+      footer hr{
+        max-width: 85%;
+      }
+    
+    }
