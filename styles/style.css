@@ -23,6 +23,9 @@
     margin: 0;
     padding: 0;
   }
+  body{
+    background-color: #000000;
+  }
   /* default styles */
 .display-flex{
     display: flex;
@@ -39,18 +42,16 @@
   header{
     /* position: relative; */
     max-width: 1440px;
-    /* height: 715px; */
     margin: 0 auto;
-    border: 2px solid red;
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
-    background-color: rgb(0, 0, 0);
-
+    background-color:rgb(17, 17, 17)
+  }
+  .header{
+    border: none;
   }
   .navbar{
     justify-content: space-between;
-    /* margin-top: 58px; */
     max-width: 1080px;
-    margin: 50px auto;
+    margin: 0px auto 50px auto;
   }
   .nav-icon{
     display: none;
@@ -64,12 +65,14 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 49px;
     align-items: center;
+    margin-top: 30px;
    }
   .brand{
     color: rgb(230, 83, 60);
     font-size: 2.25rem;
     font-weight: 800;
     font-style: italic;
+    margin-top: 30px;
   }
   .btn-nav{
     background-color: rgb(230, 83, 60);
@@ -90,7 +93,6 @@
   }
   .banner-text{
     max-width: 520px;
-    /* border: 2px solid green; */
     margin-top: 70px;
     text-align: left;
   }
@@ -130,7 +132,6 @@
   .banner-img img{
     max-width: 349px;
     position: relative;
-    /* border: 2px solid red; */
   }
   .tutorial-card-1 h6{
     font-size: 1.5rem;
@@ -186,7 +187,6 @@ margin-left: 22px;
 /* change your habit */
 #habit{
   max-width: 1440px;
-  border: 2px solid green;
   margin: 0 auto;
   background-color: rgb(0, 0, 0);
 }
@@ -204,7 +204,6 @@ margin-left: 22px;
 }
 .change-card-container{
   max-width: 1044px;
-  border: 2px solid aqua;
   margin: 0 auto;
   margin-top: 55px;
   display: grid;
@@ -233,7 +232,6 @@ margin-left: 22px;
 /* extra-mile section */
 #extra-mile{
   max-width: 1440px;
-  border: 2px solid green;
   margin: 0 auto;
   background-color: rgb(0, 0, 0);
 }
@@ -241,8 +239,6 @@ margin-left: 22px;
 .extra-mile-container{
   max-width: 1060px;
   margin: 0 auto;
-  /* border: none; */
-  border: 2px solid aqua;
   border-radius: 18px;
   margin-top: 100px;
   background: rgb(34, 34, 34);
@@ -252,7 +248,6 @@ margin-left: 22px;
   max-width: 366px;
 height: 312px;
 border-radius:18px;
-/* padding: 30px; */
 margin: 30px;
 object-fit: none;
 object-position: 66% 33%;
@@ -278,7 +273,6 @@ margin-bottom: 15px;
 /* bmi section */
 #bmi-calculator{
   max-width: 1440px;
-  border: 2px solid green;
   margin: 0 auto;
   background-color: rgb(0, 0, 0);
 }
@@ -298,7 +292,6 @@ margin-bottom: 15px;
 .bmi-details-container{
   max-width: 1440px;
   margin: 0 auto;
-  border: 2px solid red;
   justify-content: space-between;
   background: rgb(34, 34, 34);
 }
@@ -356,7 +349,7 @@ td{
   font-size: 0.875rem;
 }
 .form-3{
-width: 48%;
+width: 48.5%;
 font-size: 0.875rem;
 }
 .form-2{
@@ -371,7 +364,6 @@ font-size: 0.875rem;
 /* meet team section  */
 #meet-team{
   max-width: 1440px;
-  border: 2px solid yellow;
   margin: 0 auto;
   background-color: rgb(0, 0, 0);
 }
@@ -389,7 +381,6 @@ font-size: 0.875rem;
 }
 .meet-card-container{
   max-width: 1060px;
-  /* height: 604px; */
   margin: 0 auto;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.1);
@@ -425,16 +416,74 @@ font-size: 0.875rem;
 .meet-team-title p{
   font-size: 0.875rem;
 }
+/* join team section  */
+#join-team{
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+}
+.join-team-container{
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap: 50px;
+}
+#join-team h2{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+.join-card{
+  background-color: rgb(34, 34, 34);
+  border-radius: 5px;
+
+}
+#join-team h3{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: rgb(230, 83, 60);
+}
+.line{
+  margin-bottom: 20px;
+  max-width: 90%;
+  border: 1px solid rgb(230, 83, 60);
+}
+#join-team h5{
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: rgb(230, 83, 60);
+}
+#join-team p{
+  font-size: 1.15rem;
+  margin-bottom: 20px;
+}
+#join-team ul{
+  margin-left: 20px;
+  list-style-type: square;
+}
+#join-team li{
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+#join-team button{
+  padding: 12px 70px 12px 70px;
+  margin-top: 20px;
+
+}
+
+
+
 /* footer section  */
 footer{
   max-width: 1440px;
-  border: 2px solid yellow;
   margin: 0 auto;
   background-color: rgb(34, 34, 34);
 }
 .footer-content{
   max-width: 1060px;
-  border: 2px solid blue;
   margin: 0 auto;
   margin-top: 65px;
   justify-content: space-between;
@@ -444,6 +493,7 @@ footer{
   font-size: 4.3rem;
   font-weight: 800;
   font-style: italic;
+  margin-top: 30px;
 }
 .fitness-text p{
   font-size: 0.875rem;
@@ -452,6 +502,8 @@ footer{
 }
 .get-started-text h3{
   font-size: 2rem;
+
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 .get-started-text p{
@@ -460,7 +512,6 @@ footer{
 }
 .footer-text-container{
   gap: 150px;
-  border: 2px solid red;
 }
 footer hr{
   margin-top: 80px;
@@ -471,7 +522,6 @@ footer hr{
 .copyright-text{
   text-align: center;
   font-size: 1.25rem;
-  margin-bottom: 35px;
 }
 
 
