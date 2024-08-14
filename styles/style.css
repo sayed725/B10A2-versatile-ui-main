@@ -428,6 +428,7 @@ font-size: 0.875rem;
   display: grid;
   grid-template-columns:repeat(3, 1fr);
   gap: 50px;
+  text-align: center;
 }
 #join-team h2{
   text-align: center;
@@ -445,11 +446,13 @@ font-size: 0.875rem;
   font-size: 2rem;
   margin-bottom: 20px;
   color: rgb(230, 83, 60);
+  margin-top: 20px;
 }
 .line{
   margin-bottom: 20px;
   max-width: 90%;
   border: 1px solid rgb(230, 83, 60);
+  margin: 0px auto 20px auto;
 }
 #join-team h5{
   font-size: 1.5rem;
@@ -463,14 +466,18 @@ font-size: 0.875rem;
 #join-team ul{
   margin-left: 20px;
   list-style-type: square;
+  margin: 0 auto;
+  text-decoration: none;
 }
 #join-team li{
   font-size: 0.875rem;
   margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.5);
 }
 #join-team button{
   padding: 12px 70px 12px 70px;
   margin-top: 20px;
+  margin-bottom: 20px;
 
 }
 

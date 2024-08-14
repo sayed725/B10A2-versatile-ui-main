@@ -103,6 +103,10 @@
     .change-card{
       width: auto;
     }
+    .change-card p{
+      width: 80%;
+      margin: 0 auto;
+    }
     /* .extra-mile-container */
     .extra-mile-container{
       flex-direction: column;
@@ -134,6 +138,10 @@
         font-size: 2rem;
         margin-bottom: 15px;
       }
+      .bmi-calculator-title p{
+        width: 80%;
+        margin: 0 auto;
+      }
       .bmi-details-container{
         flex-direction: column;
       }
@@ -162,6 +170,10 @@
         font-size: 2rem;
         font-weight: 900;
         margin-bottom: 15px;
+      }
+      .meet-team-title p{
+        width: 80%;
+        margin: 0 auto;
       }
       .card3{
         order: 3;
